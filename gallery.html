@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Otto Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">OTTO</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>GALLERY</h1>
+        <p>A look inside Otto</p>
+    </div>
+
+    <section>
+        <p>Take a look at our space, our coffee and the people that make Otto what it is. Click any image to view it larger.</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openLightbox('The Interior', 'interior.jpg')">
+                <img src="interior.jpg" alt="The Interior">
+                <div class="gallery-overlay">The Interior</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox('Coffee Bar', 'coffee_bar.jpg')">
+                <img src="coffee_bar.jpg" alt="Coffee Bar">
+                <div class="gallery-overlay">Coffee Bar</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox('Morning Espresso', 'espresso.jpg')">
+                <img src="espresso.jpg" alt="Morning Espresso">
+                <div class="gallery-overlay">Morning Espresso</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox('Latte Art', 'latte_art.jpg')">
+                <img src="latte_art.jpg" alt="Latte Art">
+                <div class="gallery-overlay">Latte Art</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox('Pastries', 'pastries.jpg')">
+                <img src="pastries.jpg" alt="Pastries">
+                <div class="gallery-overlay">Pastries</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox('Outdoor Seating', 'outdoor_seating.jpg')">
+                <img src="outdoor_seating.jpg" alt="Outdoor Seating">
+                <div class="gallery-overlay">Outdoor Seating</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox('Cold Brew', 'cold_brew.jpg')">
+                <img src="cold_brew.jpg" alt="Cold Brew">
+                <div class="gallery-overlay">Cold Brew</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox('Avocado Toast', 'avocado_toast.jpg')">
+                <img src="avocado_toast.jpg" alt="Avocado Toast">
+                <div class="gallery-overlay">Avocado Toast</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox('Our Space', 'interior.jpg')">
+                <img src="coffee_bar.jpg" alt="Our Space">
+                <div class="gallery-overlay">Our Space</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox">
+        <div id="lightbox-content">
+            <button id="lightbox-close" onclick="closeLightbox()">&#x2715;</button>
+            <img id="lightbox-img" src="" alt="">
+            <span id="lightbox-label"></span>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Otto Cafe, Ajman. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

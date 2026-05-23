@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Otto Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">OTTO</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>OUR MENU</h1>
+        <p>Simple food. Great coffee.</p>
+    </div>
+
+    <section>
+
+        <!-- Filter Buttons -->
+        <div class="menu-filter">
+            <button class="btn active-filter" onclick="filterMenu('all', this)">ALL</button>
+            <button class="btn btn-dark" onclick="filterMenu('coffee', this)">COFFEE</button>
+            <button class="btn btn-dark" onclick="filterMenu('food', this)">FOOD</button>
+            <button class="btn btn-dark" onclick="filterMenu('drinks', this)">DRINKS</button>
+        </div>
+
+        <!-- Coffee -->
+        <div class="menu-section" id="coffee">
+            <h3>Coffee</h3>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Espresso</div>
+                    <div class="menu-item-desc">A single shot of our house blend</div>
+                </div>
+                <div class="menu-item-price">AED 12</div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Americano</div>
+                    <div class="menu-item-desc">Espresso with hot water</div>
+                </div>
+                <div class="menu-item-price">AED 15</div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Flat White</div>
+                    <div class="menu-item-desc">Double espresso with steamed milk</div>
+                </div>
+                <div class="menu-item-price">AED 18</div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Cappuccino</div>
+                    <div class="menu-item-desc">Espresso, steamed milk and foam</div>
+                </div>
+                <div class="menu-item-price">AED 18</div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Latte</div>
+                    <div class="menu-item-desc">Espresso with lots of steamed milk</div>
+                </div>
+                <div class="menu-item-price">AED 20</div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Cold Brew</div>
+                    <div class="menu-item-desc">Brewed overnight, served over ice</div>
+                </div>
+                <div class="menu-item-price">AED 22</div>
+            </div>
+        </div>
+
+        <!-- Food -->
+        <div class="menu-section" id="food">
+            <h3>Food</h3>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Avocado Toast</div>
+                    <div class="menu-item-desc">Sourdough, smashed avocado, chili flakes</div>
+                </div>
+                <div class="menu-item-price">AED 32</div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Grilled Chicken Sandwich</div>
+                    <div class="menu-item-desc">Chicken, lettuce, tomato, garlic sauce</div>
+                </div>
+                <div class="menu-item-price">AED 38</div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Croissant</div>
+                    <div class="menu-item-desc">Plain or with butter and jam</div>
+                </div>
+                <div class="menu-item-price">AED 15</div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Chocolate Muffin</div>
+                    <div class="menu-item-desc">Baked fresh daily</div>
+                </div>
+                <div class="menu-item-price">AED 14</div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Cheesecake Slice</div>
+                    <div class="menu-item-desc">Classic New York style</div>
+                </div>
+                <div class="menu-item-price">AED 25</div>
+            </div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="menu-section" id="drinks">
+            <h3>Cold Drinks</h3>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Fresh Orange Juice</div>
+                    <div class="menu-item-desc">Freshly squeezed</div>
+                </div>
+                <div class="menu-item-price">AED 20</div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Mango Smoothie</div>
+                    <div class="menu-item-desc">Mango, yogurt, honey</div>
+                </div>
+                <div class="menu-item-price">AED 22</div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Iced Matcha Latte</div>
+                    <div class="menu-item-desc">Oat milk, matcha, ice</div>
+                </div>
+                <div class="menu-item-price">AED 24</div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Still / Sparkling Water</div>
+                    <div class="menu-item-desc">500ml bottle</div>
+                </div>
+                <div class="menu-item-price">AED 8</div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Otto Cafe, Ajman. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

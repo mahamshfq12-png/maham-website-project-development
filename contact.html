@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Otto Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">OTTO</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>CONTACT</h1>
+        <p>We'd love to hear from you</p>
+    </div>
+
+    <section>
+        <div class="contact-wrapper">
+
+            <div class="contact-info">
+                <h3>Find Us</h3>
+                <p>📍 Al Nuaimiya, Ajman, UAE</p>
+                <p>📞 +971 6 123 4567</p>
+                <p>✉️ hello@ottocafe.ae</p>
+                <p>📸 @ottocafe.ajman</p>
+                <br>
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 7:00 AM - 10:00 PM</p>
+                <p>Saturday - Sunday: 8:00 AM - 11:00 PM</p>
+                <br>
+                <h3>Parking</h3>
+                <p>Free parking is available in front of the cafe.</p>
+            </div>
+
+            <div class="contact-form">
+                <h3>Send A Message</h3>
+                <input type="text" id="name" placeholder="Your Name" />
+                <input type="email" id="email" placeholder="Your Email" />
+                <input type="text" id="subject" placeholder="Subject" />
+                <textarea id="message" placeholder="Your message..."></textarea>
+                <button onclick="sendMessage()">SEND MESSAGE</button>
+                <p id="form-msg"></p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="map-placeholder">
+        [ Google Map — Al Nuaimiya, Ajman ]
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Otto Cafe, Ajman. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
